@@ -87,6 +87,9 @@
     .right-search-icon {
         display: none;
     }
+    .left-header-button {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
@@ -96,6 +99,7 @@
     .right-search-icon {
         opacity: 1;
         width: 20px;
+        margin-top: 3px;
     }
     .following,
     .browse {
@@ -107,6 +111,9 @@
     .left-header-icon:hover {
         fill: #bf94ff;
         cursor: pointer;
+    }
+    .left-header-button {
+        display: flex;
     }
 }
 
@@ -137,6 +144,7 @@
 
 .right-header-icon {
     width: 20px;
+    margin-top: 3px;
 }
 
 .right-header-button:hover {
@@ -145,9 +153,36 @@
     cursor: pointer;
 }
 
-.right-header-button {
+.right-header-button,
+.left-header-button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
+    position: relative;
+    justify-content: center;
+    z-index: 300;
+}
+
+.right-header-button {
+    display: flex;
+}
+
+.header-hint {
+    position: absolute;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    top: 38px;
+    white-space: nowrap;
+    pointer-events: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.right-header-button:hover .header-hint,
+.left-header-button:hover .header-hint {
+    opacity: 1;
 }
 
 .profile-picture {
