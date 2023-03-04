@@ -67,7 +67,7 @@
         border-bottom-left-radius: 6px;
         background-color: rgba(255, 255, 255, 0.16);
         border: none;
-        padding: 12px 12px 9px 10px;
+        padding: 10px 12px 9px 10px;
         margin-right: 1px;
         color: white;
         font-size: 14px;
@@ -81,7 +81,7 @@
     }
     .search-icon-box {
         background-color: rgb(255, 255, 255, 0.08);
-        padding: 2px 4px;
+        padding: 1px 4px 2px 4px;
         border-bottom-right-radius: 6px;
         border-top-right-radius: 6px;
     }
@@ -93,6 +93,9 @@
         display: none;
     }
     .left-header-button {
+        display: none;
+    }
+    .right-header-button:first-child {
         display: none;
     }
 }
@@ -159,12 +162,17 @@
 }
 
 .right-header-button,
-.left-header-button {
+.left-header-button,
+.three-dots-button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     position: relative;
     justify-content: center;
     z-index: 300;
+}
+
+.three-dots-button {
+    margin-top: 5px;
 }
 
 .right-header-button {

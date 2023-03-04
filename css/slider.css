@@ -1,0 +1,71 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.main-slider-stream {
+    display: flex;
+}
+
+.slider-thumbnail {
+    width: 530px;
+    height: 300px;
+}
+
+.slider-info-column {
+    background-color: #18181b;
+    width: 200px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.streamer-info {
+    display: flex;
+    align-items: center;
+}
+
+.channel-picture {
+    width: 50px;
+    border-radius: 25px;
+}
+
+.rest-info {
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.channel-name {
+    color: rgb(177, 130, 218);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.game {
+    color: rgb(177, 130, 218);
+    font-size: 15px;
+}
+
+.viewers-count {
+    font-size: 13px;
+}
+
+.category {
+    border: none;
+    border-radius: 7px;
+    padding: 2px 10px;
+    font-size: 13px;
+    color: #d3d3d3;
+    background-color: #3d3d3d;
+}
+
+.description-text {
+    font-size: 14px;
+    line-height: 20px;
+}
