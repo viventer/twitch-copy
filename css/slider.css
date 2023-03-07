@@ -2,8 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
     position: relative;
+    width: 1600px;
+    height: 300px;
+}
+
+.slider-row {
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
 .main-slider-stream {
@@ -23,27 +33,33 @@
 }
 
 .left-slider-stream {
-    margin-right: 130px;
-    margin-top: 25px;
     z-index: 90;
+    position: absolute;
+    left: 200px;
+    top: 25px;
 }
 
 .right-slider-stream {
-    margin-left: 130px;
-    margin-top: 25px;
     z-index: 90;
+    position: absolute;
+    right: 200px;
+    top: 25px;
 }
 
 .second-left-slider-stream {
-    margin-right: -200px;
     z-index: 80;
     margin-top: 20px;
+    position: absolute;
+    left: 0;
+    top: 25px;
 }
 
 .second-right-slider-stream {
-    margin-left: -200px;
     z-index: 80;
     margin-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 25px;
 }
 
 .right-slider-stream .slider-thumbnail,
@@ -69,6 +85,20 @@
 .second-right-slider-stream .slider-thumbnail:hover, 
 .second-left-slider-stream .slider-thumbnail:hover{
     filter: brightness(95%);
+}
+
+.right-slider-stream .slider-thumbnail:hover,
+.left-slider-stream .slider-thumbnail:hover {
+    width: 450px;
+    height: 256px;
+    top: 15px;
+}
+
+.second-left-slider-stream .slider-thumbnail:hover,
+.second-right-slider-stream .slider-thumbnail:hover {
+    width: 408px;
+    height: 215px;
+    top: 18px;
 }
 
 .right-slider-stream .slider-info-column,
@@ -153,11 +183,20 @@
     line-height: 20px;
 }
 
+.right-slider-button {
+    margin-left: 70px;
+}
+
+.left-slider-button {
+    margin-right: 70px;
+}
+
 .right-slider-button,
 .left-slider-button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     width: 40px;
+    height: 40px;
     padding: 6px 8px;
     border-radius: 5px;
 }
@@ -165,14 +204,6 @@
 .right-slider-button:hover,
 .left-slider-button:hover {
     background-color: rgba(255, 255, 255, 0.15);
-}
-
-.right-slider-button {
-    margin-left: 90px;
-}
-
-.left-slider-button {
-    margin-right: 90px;
 }
 
 .slider-thumbnail-column {
@@ -188,6 +219,7 @@
     padding: 2px 6px;
     font-weight: 700;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .slider-thumbnail-column button {
@@ -201,6 +233,7 @@
 
 .slider-thumbnail-column button:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
 }
 
 .play-button {
@@ -223,4 +256,3 @@
     bottom: 10px;
     padding: 4px 5px 2px 5px;
 }
-
