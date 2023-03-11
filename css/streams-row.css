@@ -1,0 +1,59 @@
+.streams-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+}
+
+.stream {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.stream-thumbnail-row {
+  position: relative;
+}
+
+.stream-thumbnail {
+  width: 100%;
+}
+
+.stream-viewers-count {
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  padding: 3px 5px;
+  border-radius: 1px;
+}
+
+.stream-info {
+  display: flex;
+  column-gap: 10px;
+}
+
+.stream-channel-picture {
+  width: 40px;
+}
+
+.rest-info-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.stream-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.stream-channel-name,
+.stream-category {
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+}
+
+.stream-three-dots {
+  width: 16px;
+}

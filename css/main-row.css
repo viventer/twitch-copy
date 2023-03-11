@@ -1,0 +1,39 @@
+.row-category-header {
+  font-size: 18px;
+  margin-bottom: -20px;
+}
+
+.violet-text {
+  color: rgb(181, 139, 218);
+}
+
+.main-row {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.show-more-row {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.expand-text {
+  color: rgb(181, 139, 218);
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: -12px;
+}
+
+.down-arrow {
+  width: 20px;
+}
+
+.line {
+  flex: 1;
+  border-top: 1px solid rgb(48, 48, 48);
+}
