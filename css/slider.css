@@ -14,6 +14,7 @@
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+  position: relative;
 }
 
 .main-slider-stream {
@@ -204,6 +205,26 @@
 .left-slider-button {
   margin-right: 70px;
 }
+
+.right-slider-button {
+  position: absolute;
+  right: 30px;
+}
+
+.left-slider-button {
+  position: absolute;
+  left: 30px;
+}
+
+/* @media (max-width: 1920px) {
+  .left-slider-button {
+    margin-right: 70px;
+    position: relative;
+  }
+  .right-slider-button {
+    margin-left: 70px;
+  }
+} */
 
 .right-slider-button,
 .left-slider-button {
