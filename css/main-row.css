@@ -1,6 +1,6 @@
 .row-category-header {
   font-size: 18px;
-  margin-bottom: -20px;
+  margin-bottom: -5px;
   margin-top: -20px;
 }
 
@@ -14,13 +14,34 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 15px;
 }
 
 .show-more-row {
   display: flex;
   align-items: center;
   column-gap: 20px;
+}
+
+.show-more-row .text-column {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.show-more-row .text-column:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.show-more-row .text-column:hover .expand-text {
+  color: white;
+}
+
+.show-more-row .text-column:hover .down-arrow {
+  fill: white;
 }
 
 .expand-text {
@@ -32,6 +53,7 @@
 
 .down-arrow {
   width: 20px;
+  fill: rgb(181, 139, 218);
 }
 
 .line {
