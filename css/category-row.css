@@ -1,15 +1,14 @@
+.category-row {
+  display: grid;
+  column-gap: 10px;
+  margin-bottom: 5px;
+}
+
 .category-box {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   position: relative;
-}
-
-.category-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 10px;
-  margin-bottom: 5px;
 }
 
 .category-thumbnail {
